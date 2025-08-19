@@ -124,31 +124,33 @@ nav a:is(:hover, :focus-visible) {
 }
 
 /* Герой — фото як background */
-.hero {
+.hero{
     position: relative;
     isolation: isolate;
-    min-height: 80svh;
+    min-height: 85svh;
     display: grid;
     place-items: center;
     text-align: center;
     padding: 96px 0;
     color: var(--lime);
-    background: linear-gradient(
-        160deg,
-        var(--deep-green) 60%,
-        var(--lime) 120%
-      ),
-      url("https://images.openai.com/thumbnails/url/Cg18lHicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5MzkvLrPLziw8sd4l3dE1LDwvySImo8MkucApMcymLCPErTw0uDMuOdE6vdNZNCXd1MfP2d82x9CpWKwYA6BMpsw") no-repeat center/cover;
+  
+    /* фото природы */
+    background-image: url("https://as2.ftcdn.net/jpg/12/13/15/73/1000_F_1213157365_Z9MK8Vn1sdszWs756SedlsnRbepWwrZD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 79, 47, .55);
-    /* затемнення для контрасту */
-}
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: rgba(0, 25, 15, 0.6); /* затемнение для читаемости */
+    z-index:0;
+  }
+  .hero > *{ position:relative; z-index:1; }
+  
+  
 
 .kicker {
     letter-spacing: .18em;
@@ -410,6 +412,21 @@ footer {
 .to-top:hover {
     background: rgba(204, 255, 51, .35)
 }
+/* кнопка в секції CTA */
+#audience .btn-primary,
+.cta .btn-primary {
+  background: var(--deep-green);
+  color: var(--lime);
+  border: 2px solid var(--deep-green);
+}
+
+#audience .btn-primary:hover,
+.cta .btn-primary:hover {
+  background: #00452a; /* ще темніший відтінок для hover */
+  transform: translateY(-1px);
+  filter: saturate(110%);
+}
+
 
 /* Менші анімації */
 @media (prefers-reduced-motion: reduce) {
