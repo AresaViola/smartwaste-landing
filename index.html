@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SMARTWASTE — розумні простори для сортування</title>
+    <meta name="description"
+        content="SMARTWASTE — комплексна система сортування відходів: інфраструктура, застосунок і підписка. Сортувати так легко, як викидати сміття." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- OG -->
+    <meta property="og:title" content="SMARTWASTE — розумні простори для сортування">
+    <meta property="og:description"
+        content="Перша комплексна система розумного сортування: інфраструктура + застосунок + підписка.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Опціонально: прискорюємо підвантаження фото hero -->
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=2000&auto=format&fit=crop">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>♻️</text></svg>">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav" role="navigation" aria-label="Основна навігація">
+            <a class="brand" href="#top" aria-label="SMARTWASTE Головна">
+                <span class="brand-logo" aria-hidden="true">S</span>
+                <span class="brand-title">SMARTWASTE</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#value">Переваги</a></li>
+                    <li><a href="#how">Як це працює</a></li>
+                    <li><a href="#audience">Для кого</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero (фото задається у CSS) -->
+    <main id="top" class="hero">
+        <div class="container hero-inner">
+            <p class="kicker">Розумні простори для сортування</p>
+            <h1 class="headline">Сортувати так легко, як викидати сміття</h1>
+            <p class="sub">Перша комплексна система розумного сортування, що поєднує автоматизовану інфраструктуру,
+                мобільний застосунок та підписну модель сервісу.</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="#about">Дізнатись більше</a>
+                <a class="btn btn-ghost" href="#contact">Залишити заявку</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title">Що таке SMARTWASTE?</h2>
+            <p class="section-lead">SMARTWASTE — сервіс, який робить сортування відходів простим і доступним: розумні
+                «вейстомати» біля дому або бізнесу, застосунок для ідентифікації та аналітики, а також підписка з
+                гнучким рівнем сервісу.</p>
+
+            <div class="grid col-3" style="margin-top:22px">
+                <article class="card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M4 4h16v4H4zM4 10h10v4H4zM4 16h16v4H4z" />
+                    </svg>
+                    <h3>Інфраструктура</h3>
+                    <p>Мережа розумних просторів: модулі сортування, reverse vending machines, доступ за QR / NFC.</p>
+                </article>
+
+                <article class="card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17 2H7a2 2 0 0 0-2 2v16l7-3 7 3V4a2 2 0 0 0-2-2z" />
+                    </svg>
+                    <h3>Застосунок</h3>
+                    <p>Ідентифікація біля вейстомата, персональна статистика, бонуси, карта точок, push-сповіщення.</p>
+                </article>
+
+                <article class="card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M3 12h18v2H3zM3 6h18v2H3zM3 18h18v2H3z" />
+                    </svg>
+                    <h3>Підписка</h3>
+                    <p>Гнучкі тарифи для домогосподарств та МСБ. Додаткові послуги: вивіз габаритів, будвідходів, виклик
+                        вейстера.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value props -->
+    <section id="value" aria-labelledby="value-title">
+        <div class="container">
+            <h2 id="value-title" class="section-title">Чому це зручно</h2>
+            <div class="grid col-3" style="margin-top:8px">
+                <article class="card">
+                    <h3>⚡ Швидко</h3>
+                    <p>У кроковій доступності — сервіс щоденного комфорту в межах 5 хвилин ходу.</p>
+                </article>
+                <article class="card">
+                    <h3>🌍 Екологічно</h3>
+                    <p>Чистота, відсутність сморіду та прозорість процесу сортування.</p>
+                </article>
+                <article class="card">
+                    <h3>🎁 Вигідно</h3>
+                    <p>Бонуси, кешбек і партнерські програми лояльності за кожну здачу.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" aria-labelledby="how-title">
+        <div class="container">
+            <h2 id="how-title" class="section-title">Як це працює</h2>
+            <div class="grid col-2" style="margin-top:12px">
+                <article class="card step"><span class="num">1</span>
+                    <div>
+                        <h3>Встанови застосунок</h3>
+                        <p>Швидка реєстрація через email/телефон чи соцмережі.</p>
+                    </div>
+                </article>
+                <article class="card step"><span class="num">2</span>
+                    <div>
+                        <h3>Ідентифікуйся біля вейстомата</h3>
+                        <p>QR-код у застосунку, NFC або Bluetooth-авторизація.</p>
+                    </div>
+                </article>
+                <article class="card step"><span class="num">3</span>
+                    <div>
+                        <h3>Сортуй відходи</h3>
+                        <p>Автовідкриття потрібного модуля/комірки, підказки в інтерфейсі.</p>
+                    </div>
+                </article>
+                <article class="card step"><span class="num">4</span>
+                    <div>
+                        <h3>Отримуй бонуси</h3>
+                        <p>Нарахування балів, статистика CO₂-економії, винагороди від партнерів.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience & CTA -->
+    <section id="audience" aria-labelledby="audience-title">
+        <div class="container">
+            <h2 id="audience-title" class="section-title">Для кого</h2>
+            <p class="section-lead">Резиденти ЖК, локальний МСБ та всі, хто хоче сортувати без зайвих зусиль.</p>
+            <aside class="cta" style="margin-top:28px" aria-label="Заклик до дії">
+                <h3>Приєднуйся до екологічного майбутнього вже сьогодні</h3>
+                <p>Пілотні розміщення та партнерства — відкриті до співпраці.</p>
+                <div class="cta-row"><a class="btn btn-primary" href="#contact">Залишити заявку</a></div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title">Контакти</h2>
+            <p class="section-lead">Залиште свої контакти — надішлемо матеріали та демо-доступ, щойно він буде готовий.
+            </p>
+
+            <form id="contact-form" novalidate>
+                <div>
+                    <label for="name">Ім’я</label>
+                    <input id="name" name="name" type="text" placeholder="Іван" autocomplete="name" />
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" type="email" inputmode="email" placeholder="name@example.com"
+                        required autocomplete="email" />
+                </div>
+                <div>
+                    <label for="msg">Повідомлення</label>
+                    <textarea id="msg" name="message" placeholder="Коротко опишіть запит"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input id="sub" type="checkbox" />
+                    <label for="sub">Підписатися на оновлення та промо-акції</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Надіслати</button>
+                <p id="form-result" class="legal" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container foot-grid">
+            <div class="brand" aria-label="SMARTWASTE">
+                <span class="brand-logo" aria-hidden="true">S</span>
+                <span class="brand-title">SMARTWASTE</span>
+            </div>
+            <p class="mini">© 2025 SMARTWASTE. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <a class="to-top" href="#top" aria-label="Повернутись нагору">▲</a>
+
+    <!-- Schema.org (Organization) -->
+    <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"SMARTWASTE","url":"https://example.com","logo":"https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=400&auto=format&fit=crop","sameAs":[]}
+  </script>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const result = document.getElementById('form-result');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            if (!email) { result.textContent = 'Будь ласка, вкажіть email.'; result.style.color = '#ccff33'; return; }
+            const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            if (!ok) { result.textContent = 'Схоже, email некоректний. Перевірте, будь ласка.'; result.style.color = '#ccff33'; return; }
+            result.textContent = `Дякуємо${name ? `, ${name}` : ''}! Ваш запит збережено локально для демо.`; result.style.color = '#ccff33'; form.reset();
+        });
+        const toTop = document.querySelector('.to-top');
+        const toggleTop = () => { if (window.scrollY > 360) toTop.classList.add('show'); else toTop.classList.remove('show'); };
+        toggleTop(); window.addEventListener('scroll', toggleTop, { passive: true });
+        document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
+    </script>
+</body>
+
+</html>
