@@ -25,9 +25,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Опціонально: прискорюємо підвантаження фото hero -->
-    <!-- <link rel="preload" as="image"
-        href="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=2000&auto=format&fit=crop"> -->
 
     <!-- Favicon -->
     <link rel="icon"
@@ -39,9 +36,9 @@
     <header>
         <div class="container nav" role="navigation" aria-label="Основна навігація">
             <a class="brand" href="#top" aria-label="SMARTWASTE Головна">
-                <span class="brand-logo" aria-hidden="true">S</span>
-                <span class="brand-title">SMARTWASTE</span>
+                <img src="logo.jpg" alt="SMARTWASTE" class="brand-logo-img">
             </a>
+            
             <nav>
                 <ul>
                     <li><a href="#about">Про нас</a></li>
@@ -62,8 +59,8 @@
             <p class="sub">Перша комплексна система розумного сортування, що поєднує автоматизовану інфраструктуру,
                 мобільний застосунок та підписну модель сервісу.</p>
             <div class="cta-row">
-                <a class="btn btn-primary" href="#about">Дізнатись більше</a>
-                <a class="btn btn-ghost" href="#contact">Залишити заявку</a>
+                <a class="btn btn-primary" href="#contact">Залишити заявку</a>
+                <a class="btn btn-ghost" href="#footer">Завантажити застосунок</a>
             </div>
         </div>
     </main>
@@ -163,8 +160,23 @@
     <section id="audience" aria-labelledby="audience-title">
         <div class="container">
             <h2 id="audience-title" class="section-title">Для кого</h2>
-            <p class="section-lead">Резиденти ЖК, локальний МСБ та всі, хто хоче сортувати без зайвих зусиль.</p>
-            <aside class="cta" style="margin-top:28px" aria-label="Заклик до дії">
+            <div class="grid col-3 audience-grid">
+                <article class="card audience-card">
+                  <h3>🏠 Резиденти ЖК</h3>
+                  <p>Сортування відходів біля дому без зайвих зусиль.</p>
+                </article>
+              
+                <article class="card audience-card">
+                  <h3>🏢 Локальний МСБ</h3>
+                  <p>Зручна інфраструктура для бізнесу та клієнтів.</p>
+                </article>
+              
+                <article class="card audience-card">
+                  <h3>🌍 Для всіх</h3>
+                  <p>Хто хоче сортувати без зайвих турбот і отримувати бонуси.</p>
+                </article>
+              </div>
+                          <aside class="cta" style="margin-top:28px" aria-label="Заклик до дії">
                 <h3>Приєднуйся до екологічного майбутнього вже сьогодні</h3>
                 <p>Пілотні розміщення та партнерства — відкриті до співпраці.</p>
                 <div class="cta-row"><a class="btn btn-primary" href="#contact">Залишити заявку</a></div>
@@ -203,15 +215,25 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="container foot-grid">
             <div class="brand" aria-label="SMARTWASTE">
                 <span class="brand-logo" aria-hidden="true">S</span>
                 <span class="brand-title">SMARTWASTE</span>
             </div>
             <p class="mini">© 2025 SMARTWASTE. Усі права захищено.</p>
+      
+            <div class="store-buttons">
+              <a href="https://apps.apple.com/ua/app/telegram-messenger/id686449807" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Завантажити в App Store">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" rel="noopener">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Завантажити в Google Play">
+              </a>
+            </div>
         </div>
-    </footer>
+      </footer>
+      
 
     <a class="to-top" href="#top" aria-label="Повернутись нагору">▲</a>
 
